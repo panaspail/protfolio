@@ -53,7 +53,7 @@ function App(){
 
    <section id="skills" className="section darkSection"><div className="container"><SectionTitle eyebrow="02 / SKILLS" title="Skills that I can explain"><span className="sectionNote">Evidence over buzzwords</span></SectionTitle><div className="skillGrid">{skills.map(({icon:Icon,title,items})=><article className="skillCard" key={title}><Icon size={23}/><h3>{title}</h3><div className="chips">{items.map(x=><span key={x}>{x}</span>)}</div></article>)}</div></div></section>
 
-   <section id="contact" className="contactSection"><div className="container contactInner"><div><span className="eyebrow">03 / CONTACT</span><p>{profile.intro}</p></div><div className="contactActions"><a className="button primary" href={'mailto:'+profile.email}><Mail size={17}/> Email me</a><a className="button ghost" href={profile.linkedin}> LinkedIn</a></div></div></section>
+   <section id="contact" className="contactSection"><div className="container contactInner"><div><span className="eyebrow">03 / CONTACT</span><p>{profile.intro}</p></div><div className="contactActions"><a className="button primary" href={'mailto:'+profile.email}><Mail size={17}/> Email me</a><a className="button ghost" href={profile.linkedin}> LinkedIn</a><a className="button ghost" href="/resume.pdf"><Download size={17}/> CV / Resume</a></div></div></section>
   </main>
   <footer><div className="container footerInner"><span>BUILD IT. SHIP IT. OWN IT.</span></div></footer>
  </div>
